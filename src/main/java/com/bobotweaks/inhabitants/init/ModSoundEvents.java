@@ -16,6 +16,7 @@ public class ModSoundEvents {
     public static final SoundEvent DRILL_START = register("drill_start");
     public static final SoundEvent DRILL_STOPPED = register("drill_stopped");
     public static final SoundEvent DRILL_DIG = register("drill_dig");
+    public static final SoundEvent REVERSE_GROWTH = register("reverse_growth");
 
     private static SoundEvent register(String name) {
         Identifier id = Identifier.of(Inhabitants.MOD_ID, name);

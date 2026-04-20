@@ -1,5 +1,18 @@
 # Todo's
 
+## Porting
+### Items
+- [x] Spike drill
+### Effects
+- [x] Reverse Growth
+- [ ] Immaterial
+- [ ] Sticky Legs
+- [ ] Undead Disguise
+### Entities
+- [ ] Clam
+- [ ] Impaler
+- [ ] Bogre
+
 ## Bugs & Fixes
 
 ### Spike Drill

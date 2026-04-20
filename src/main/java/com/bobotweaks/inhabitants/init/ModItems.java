@@ -5,6 +5,7 @@ import com.bobotweaks.inhabitants.items.GiantBoneItem;
 import com.bobotweaks.inhabitants.items.food.FishSnotChowderItem;
 import com.bobotweaks.inhabitants.items.SpikeDrillItem;
 import com.bobotweaks.inhabitants.items.food.BakedBrainsItem;
+import com.bobotweaks.inhabitants.items.food.UncannyPottageItem;
 
 import net.minecraft.item.Item;
 import net.minecraft.registry.Registry;
@@ -36,12 +37,7 @@ public class ModItems {
         registerItem("fish_snot_chowder", FishSnotChowderItem::new);
 
     public static final Item UNCANNY_POTTAGE =
-        registerItem("uncanny_pottage", settings -> new Item(settings.food(
-            new FoodComponent.Builder()
-            .nutrition(5)
-            .saturationModifier(0.6f)
-            .build())
-            .maxCount(1)));
+        registerItem("uncanny_pottage", UncannyPottageItem::new);
 
     public static final Item MARINATED_SPIDER =
         registerItem("marinated_spider", settings -> new Item(settings.food(

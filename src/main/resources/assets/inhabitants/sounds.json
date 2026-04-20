@@ -31,5 +31,20 @@
       "inhabitants:item/spike_drill/dig_1",
       "inhabitants:item/spike_drill/dig_2"
     ]
+  },
+  "reverse_growth": {
+    "sounds": [
+       "inhabitants:effects/reverse_growth"
+    ]
+  },
+  "concussion_buzz": {
+    "sounds": [
+      "inhabitants:effects/concussion_buzz"
+    ]
+  },
+  "immaterial_inside": {
+    "sounds": [
+      "inhabitants:effects/immaterial_inside"
+    ]
   }
 }

@@ -2,7 +2,9 @@
 	"required": true,
 	"package": "com.bobotweaks.inhabitants.mixin",
 	"compatibilityLevel": "JAVA_21",
-	"mixins": [],
+	"mixins": [
+		"ReverseGrowthMixin"
+	],
 	"injectors": {
 		"defaultRequire": 1
 	},

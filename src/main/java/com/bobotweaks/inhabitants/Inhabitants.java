@@ -30,6 +30,8 @@ public class Inhabitants implements ModInitializer {
 		ModBlocks.register();
 		ModEntities.register();
 		ModBlockEntities.register();
+		ModEffects.register();
+		ModParticleTypes.register();
 		ModSoundEvents.register();
 
 		LOGGER.info("Inhabitants Initialized!");
