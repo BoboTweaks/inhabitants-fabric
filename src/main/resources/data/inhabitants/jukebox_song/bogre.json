@@ -1,0 +1,8 @@
+{
+  "comparator_output": 11,
+  "description": {
+    "translate": "item.inhabitants.music_disc_bogre.desc"
+  },
+  "length_in_seconds": 169,
+  "sound_event": "inhabitants:item.music_disc.bogre"
+}

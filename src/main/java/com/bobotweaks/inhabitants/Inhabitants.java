@@ -14,6 +14,7 @@ public class Inhabitants implements ModInitializer {
 	@Override
 	public void onInitialize() {
 		ModCreativeModeTabs.register();
+		ModDataComponentTypes.register();
 		ModItems.register();
 		ModBlocks.register();
 		ModEntities.register();

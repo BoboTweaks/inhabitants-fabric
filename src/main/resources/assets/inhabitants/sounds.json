@@ -1,0 +1,10 @@
+{
+  "item.music_disc.bogre": {
+    "sounds": [
+      {
+        "name": "inhabitants:item/music_disc/bogre",
+        "stream": true
+      }
+    ]
+  }
+}

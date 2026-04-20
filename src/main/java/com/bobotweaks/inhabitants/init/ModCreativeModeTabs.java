@@ -24,10 +24,23 @@ public class ModCreativeModeTabs {
             .icon(() -> new ItemStack(ModItems.CREATIVE_TAB))
             .displayName(Text.translatable("creativetab.inhabitants_tab"))
             .entries((displayContext, entries) -> {
-                
+                // --- Items ---
+                // Eggs
+                entries.add(ModItems.WARPED_CLAM);
+                // Food
+                entries.add(ModItems.FISH_SNOT_CHOWDER);
+                entries.add(ModItems.UNCANNY_POTTAGE);
+                entries.add(ModItems.MARINATED_SPIDER);
+                entries.add(ModItems.BAKED_BRAINS);
+                entries.add(ModItems.DIMENSIONAL_SERVING);
+                // Tools
                 entries.add(ModItems.IMPALER_SPIKE);
                 entries.add(ModItems.GIANT_BONE);
-                entries.add(ModItems.FISH_SNOT_CHOWDER);
+                entries.add(ModItems.SPIKE_DRILL);
+                // Blocks
+                
+                // Music Discs
+                entries.add(ModItems.MUSIC_DISC_BOGRE);
 
             }).build());
 
