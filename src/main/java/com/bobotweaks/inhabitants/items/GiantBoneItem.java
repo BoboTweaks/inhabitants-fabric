@@ -48,6 +48,8 @@ public class GiantBoneItem extends Item {
     @Override
     public void inventoryTick(ItemStack stack, ServerWorld world, Entity entity, @Nullable EquipmentSlot slot) {
         if (world.isClient() || !(entity instanceof PlayerEntity player)) return;
+        
+        if (slot != EquipmentSlot.MAINHAND && slot != EquipmentSlot.OFFHAND) return;
 
         if (!player.hasStatusEffect(StatusEffects.STRENGTH)) {
             StatusEffectInstance current = player.getStatusEffect(StatusEffects.SLOWNESS);
