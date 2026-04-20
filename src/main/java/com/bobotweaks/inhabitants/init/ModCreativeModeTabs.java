@@ -24,7 +24,11 @@ public class ModCreativeModeTabs {
             .icon(() -> new ItemStack(ModItems.CREATIVE_TAB))
             .displayName(Text.translatable("creativetab.inhabitants_tab"))
             .entries((displayContext, entries) -> {
-                        
+                
+                entries.add(ModItems.IMPALER_SPIKE);
+                entries.add(ModItems.GIANT_BONE);
+                entries.add(ModItems.FISH_SNOT_CHOWDER);
+
             }).build());
 
     public static void register() {
