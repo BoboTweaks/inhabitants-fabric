@@ -29,7 +29,7 @@ public class ModBlocks {
             new BlockItem(block, new Item.Settings().registryKey(key)));
     }
 
-    public static void registerModBlocks() {
-        
+    public static void register() {
+        Inhabitants.LOGGER.info("Registering Mod Blocks for " + Inhabitants.MOD_ID);
     }
 }

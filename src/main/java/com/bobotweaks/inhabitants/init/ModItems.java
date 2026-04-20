@@ -20,7 +20,7 @@ public class ModItems {
         return Registry.register(Registries.ITEM, key, item);
     }
 
-    public static void registerModItems() {
-        
+    public static void register() {
+        Inhabitants.LOGGER.info("Registering Mod Items for " + Inhabitants.MOD_ID);
     }
 }

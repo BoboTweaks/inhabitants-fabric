@@ -27,7 +27,7 @@ public class ModCreativeModeTabs {
                         
             }).build());
 
-    public static void registerCreativeModeTabs() {
-        
+    public static void register() {
+        Inhabitants.LOGGER.info("Registering Mod Creative Tabs for " + Inhabitants.MOD_ID);
     }
 }

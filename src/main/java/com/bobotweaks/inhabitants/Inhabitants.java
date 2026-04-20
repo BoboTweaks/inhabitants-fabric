@@ -1,8 +1,6 @@
 package com.bobotweaks.inhabitants;
 
-import com.bobotweaks.inhabitants.init.ModBlocks;
-import com.bobotweaks.inhabitants.init.ModCreativeModeTabs;
-import com.bobotweaks.inhabitants.init.ModItems;
+import com.bobotweaks.inhabitants.init.*;
 
 import net.fabricmc.api.ModInitializer;
 
@@ -15,9 +13,12 @@ public class Inhabitants implements ModInitializer {
 
 	@Override
 	public void onInitialize() {
-		ModCreativeModeTabs.registerCreativeModeTabs();
-		ModItems.registerModItems();
-		ModBlocks.registerModBlocks();
+		ModCreativeModeTabs.register();
+		ModItems.register();
+		ModBlocks.register();
+		ModEntities.register();
+		ModBlockEntities.register();
+		ModSoundEvents.register();
 
 		LOGGER.info("Inhabitants Initialized!");
 	}
