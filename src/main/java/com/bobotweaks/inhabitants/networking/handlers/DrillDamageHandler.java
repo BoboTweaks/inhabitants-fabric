@@ -7,7 +7,7 @@ import com.bobotweaks.inhabitants.networking.payloads.DrillDamagePayload;
 import net.fabricmc.fabric.api.networking.v1.ServerPlayNetworking;
 
 import net.minecraft.block.*;
-import net.minecraft.entity.LivingEntity;
+import net.minecraft.entity.*;
 import net.minecraft.entity.effect.StatusEffects;
 import net.minecraft.item.ItemStack;
 import net.minecraft.registry.tag.*;
@@ -20,6 +20,7 @@ import net.minecraft.util.Formatting;
 import net.minecraft.util.hit.*;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.WorldEvents;
+import net.minecraft.entity.attribute.EntityAttributes;
 
 import java.util.*;
 

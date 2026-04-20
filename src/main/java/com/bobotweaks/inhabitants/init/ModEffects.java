@@ -2,6 +2,7 @@ package com.bobotweaks.inhabitants.init;
 
 import com.bobotweaks.inhabitants.Inhabitants;
 import com.bobotweaks.inhabitants.effects.ReverseGrowthStatusEffect;
+import com.bobotweaks.inhabitants.effects.StickyLegsStatusEffect;
 
 import net.minecraft.entity.attribute.EntityAttributeModifier;
 import net.minecraft.entity.attribute.EntityAttributes;
@@ -20,6 +21,9 @@ public class ModEffects {
                 Identifier.of(Inhabitants.MOD_ID, "effect.reverse_growth"), 
                 -0.5, 
                 EntityAttributeModifier.Operation.ADD_MULTIPLIED_TOTAL));
+
+    public static final RegistryEntry<StatusEffect> STICKY_LEGS = register("sticky_legs", 
+        new StickyLegsStatusEffect(StatusEffectCategory.BENEFICIAL, 0xf6f6f6));
 
     private static RegistryEntry<StatusEffect> register(String name, StatusEffect statusEffect) {
         return Registry.registerReference(Registries.STATUS_EFFECT,

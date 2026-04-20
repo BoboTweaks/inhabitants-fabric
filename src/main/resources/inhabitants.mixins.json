@@ -3,7 +3,8 @@
 	"package": "com.bobotweaks.inhabitants.mixin",
 	"compatibilityLevel": "JAVA_21",
 	"mixins": [
-		"ReverseGrowthMixin"
+		"ReverseGrowthMixin",
+		"StickyLegsMixin"
 	],
 	"injectors": {
 		"defaultRequire": 1

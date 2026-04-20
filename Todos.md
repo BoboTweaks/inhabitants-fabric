@@ -3,15 +3,19 @@
 ## Porting
 ### Items
 - [x] Spike drill
+- [ ] Javelin
 ### Effects
 - [x] Reverse Growth
 - [ ] Immaterial
-- [ ] Sticky Legs
+- [x] Sticky Legs
 - [ ] Undead Disguise
 ### Entities
 - [ ] Clam
 - [ ] Impaler
 - [ ] Bogre
+### Recipes
+- [ ] Spike drill
+- [ ] Javelin
 
 ## Bugs & Fixes
 
@@ -23,3 +27,4 @@
 ## QA
 - [ ] test spike drill in multiplayer
 - [ ] test Reverse Growth in multiplayer
+- [ ] test Sticky Legs in multiplayer
