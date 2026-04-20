@@ -6,5 +6,30 @@
         "stream": true
       }
     ]
+  },
+  "drill_loop": {
+    "sounds": [
+      {
+        "name": "inhabitants:item/spike_drill/drilling_loop",
+        "stream": false
+      }
+    ]
+  },
+  "drill_start": {
+    "sounds": [
+      "inhabitants:item/spike_drill/drilling_start"
+    ]
+  },
+  "drill_stopped": {
+    "sounds": [
+      "inhabitants:item/spike_drill/drilling_stopped"
+    ]
+  },
+  "drill_dig": {
+    "sounds": [
+      "inhabitants:item/spike_drill/dig_0",
+      "inhabitants:item/spike_drill/dig_1",
+      "inhabitants:item/spike_drill/dig_2"
+    ]
   }
 }
