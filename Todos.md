@@ -13,7 +13,7 @@
 - [x] Reverse Growth
 - [x] Immaterial
 - [x] Sticky Legs
-- [ ] Undead Disguise
+- [x] Undead Disguise
 - [ ] Concussion
 ### Entities
 - [ ] Clam
