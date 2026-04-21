@@ -14,7 +14,7 @@
 - [x] Immaterial
 - [x] Sticky Legs
 - [x] Undead Disguise
-- [ ] Concussion
+- [x] Concussion
 ### Entities
 - [ ] Clam
 - [ ] Impaler
