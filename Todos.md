@@ -32,6 +32,7 @@
 - [ ] temperature doesn't decrease while using the drill
 - [ ] speed doesn't have smooth transition
 - [ ] fix: third-person drilling
+- [ ] fix: drill digging sound
 
 ## QA
 ### Entities
