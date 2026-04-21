@@ -5,6 +5,7 @@ import com.bobotweaks.inhabitants.networking.payloads.DrillDamagePayload;
 import com.bobotweaks.inhabitants.client.animation.FPVAnimationManager;
 import com.bobotweaks.inhabitants.init.ModParticleTypes;
 import com.bobotweaks.inhabitants.client.particle.AbracadabraParticle;
+import com.bobotweaks.inhabitants.client.effect.ImmaterialEffectHandler;
 
 import net.fabricmc.api.ClientModInitializer;
 import net.fabricmc.fabric.api.client.networking.v1.ClientPlayNetworking;
@@ -25,5 +26,8 @@ public class InhabitantsClient implements ClientModInitializer {
 
 		// Networking
 		SpikeDrillItem.clientPacketSender = () -> ClientPlayNetworking.send(new DrillDamagePayload());
+
+		// Effects
+		ImmaterialEffectHandler.register();
 	}
 }

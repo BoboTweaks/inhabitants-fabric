@@ -44,12 +44,8 @@ public class ModItems {
         registerItem("baked_brains", BakedBrainsItem::new);
 
     public static final Item DIMENSIONAL_SERVING =
-        registerItem("dimensional_serving", settings -> new Item(settings.food(
-            new FoodComponent.Builder()
-            .nutrition(2)
-            .saturationModifier(0.2f)
-            .build())
-            .maxCount(1)));
+        registerItem("dimensional_serving", DimensionalServingItem::new);
+
     // --- Tools ---
     public static final Item GIANT_BONE =
         registerItem("giant_bone", GiantBoneItem::new);

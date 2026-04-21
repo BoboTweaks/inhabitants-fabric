@@ -46,5 +46,15 @@
     "sounds": [
       "inhabitants:effects/immaterial_inside"
     ]
+  },
+  "immaterial_enter_wall": {
+    "sounds": [
+      "inhabitants:effects/immaterial_enter_wall"
+    ]
+  },
+  "immaterial_exit_wall": {
+    "sounds": [
+      "inhabitants:effects/immaterial_exit_wall"
+    ]
   }
 }

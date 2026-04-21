@@ -1,6 +1,6 @@
 package com.bobotweaks.inhabitants.client.audio;
 
-// import com.bobotweaks.inhabitants.effects.ModEffects;
+import com.bobotweaks.inhabitants.init.ModEffects;
 import com.bobotweaks.inhabitants.init.ModSoundEvents;
 import com.bobotweaks.inhabitants.items.SpikeDrillItem;
 
@@ -67,7 +67,7 @@ public class ModTickableSounds {
 
         @Override
         public void tick() {
-            if (!this.player.isAlive()) { // TODO || !this.player.hasStatusEffect(ModEffects.CONCUSSION)
+            if (!this.player.isAlive() || !this.player.hasStatusEffect(ModEffects.CONCUSSION)) {
                 this.setDone();
             }
         }
@@ -88,7 +88,7 @@ public class ModTickableSounds {
 
         @Override
         public void tick() {
-            if (!this.player.isAlive()) { // TODO || !this.player.hasStatusEffect(ModEffects.IMMATERIAL)
+            if (!this.player.isAlive() || !this.player.hasStatusEffect(ModEffects.IMMATERIAL)) {
                 this.setDone();
             }
         }

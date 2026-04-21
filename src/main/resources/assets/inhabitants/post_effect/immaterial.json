@@ -1,0 +1,38 @@
+{
+  "targets": {
+    "swap": {}
+  },
+  "passes": [
+    {
+      "vertex_shader": "inhabitants:core/immaterial",
+      "fragment_shader": "inhabitants:core/immaterial",
+      "inputs": [
+        {
+          "sampler_name": "Diffuse",
+          "target": "minecraft:main"
+        }
+      ],
+      "output": "swap",
+      "uniforms": {
+        "Time": [
+          {
+            "name": "time",
+            "type": "float",
+            "value": 0.0
+          }
+        ]
+      }
+    },
+    {
+      "vertex_shader": "minecraft:core/screenquad",
+      "fragment_shader": "minecraft:core/blit_screen",
+      "inputs": [
+        {
+          "sampler_name": "In",
+          "target": "swap"
+        }
+      ],
+      "output": "minecraft:main"
+    }
+  ]
+}

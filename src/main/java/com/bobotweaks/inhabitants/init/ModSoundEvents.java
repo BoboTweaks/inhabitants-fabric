@@ -8,15 +8,23 @@ import net.minecraft.sound.SoundEvent;
 import net.minecraft.util.Identifier;
 
 public class ModSoundEvents {
-
+    // Music discs
     public static final SoundEvent MUSIC_DISC_BOGRE = register("item.music_disc.bogre");
-    public static final SoundEvent DRILL_LOOP = register("drill_loop");
-    public static final SoundEvent CONCUSSION_BUZZ = register("concussion_buzz");
-    public static final SoundEvent IMMATERIAL_INSIDE = register("immaterial_inside");
+
+    // Tools & Items sounds
     public static final SoundEvent DRILL_START = register("drill_start");
+    public static final SoundEvent DRILL_LOOP = register("drill_loop");
     public static final SoundEvent DRILL_STOPPED = register("drill_stopped");
     public static final SoundEvent DRILL_DIG = register("drill_dig");
+
+    // Effects sounds
     public static final SoundEvent REVERSE_GROWTH = register("reverse_growth");
+
+    public static final SoundEvent IMMATERIAL_INSIDE = register("immaterial_inside");
+    public static final SoundEvent IMMATERIAL_ENTER_WALL = register("immaterial_enter_wall");
+    public static final SoundEvent IMMATERIAL_EXIT_WALL = register("immaterial_exit_wall");
+
+    public static final SoundEvent CONCUSSION_BUZZ = register("concussion_buzz");
 
     private static SoundEvent register(String name) {
         Identifier id = Identifier.of(Inhabitants.MOD_ID, name);

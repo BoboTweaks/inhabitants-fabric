@@ -3,7 +3,14 @@
 	"package": "com.bobotweaks.inhabitants.client.mixin",
 	"compatibilityLevel": "JAVA_21",
 	"client": [
-		"HeldItemRendererMixin"
+		"HeldItemRendererMixin",
+		"ClientPlayerEntityMixin",
+		"GameRendererAccessor",
+		"InGameOverlayRendererMixin",
+		"BlockModelRendererMixin",
+		"PostEffectPassMixin",
+		"WorldRendererMixin",
+		"FogRendererMixin"
 	],
 	"injectors": {
 		"defaultRequire": 1

@@ -1,8 +1,7 @@
 package com.bobotweaks.inhabitants.init;
 
 import com.bobotweaks.inhabitants.Inhabitants;
-import com.bobotweaks.inhabitants.effects.ReverseGrowthStatusEffect;
-import com.bobotweaks.inhabitants.effects.StickyLegsStatusEffect;
+import com.bobotweaks.inhabitants.effects.*;
 
 import net.minecraft.entity.attribute.EntityAttributeModifier;
 import net.minecraft.entity.attribute.EntityAttributes;
@@ -24,6 +23,12 @@ public class ModEffects {
 
     public static final RegistryEntry<StatusEffect> STICKY_LEGS = register("sticky_legs", 
         new StickyLegsStatusEffect(StatusEffectCategory.BENEFICIAL, 0xf6f6f6));
+
+    public static final RegistryEntry<StatusEffect> IMMATERIAL = register("immaterial", 
+        new ImmaterialStatusEffect(StatusEffectCategory.BENEFICIAL, 0x562D4C));
+
+    public static final RegistryEntry<StatusEffect> CONCUSSION = register("concussion", 
+        new ConcussionStatusEffect(StatusEffectCategory.HARMFUL, 0x808080));
 
     private static RegistryEntry<StatusEffect> register(String name, StatusEffect statusEffect) {
         return Registry.registerReference(Registries.STATUS_EFFECT,

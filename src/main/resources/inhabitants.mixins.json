@@ -4,7 +4,9 @@
 	"compatibilityLevel": "JAVA_21",
 	"mixins": [
 		"ReverseGrowthMixin",
-		"StickyLegsMixin"
+		"StickyLegsMixin",
+		"ImmaterialMixin",
+		"LivingEntityMixin"
 	],
 	"injectors": {
 		"defaultRequire": 1
