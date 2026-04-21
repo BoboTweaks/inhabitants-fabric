@@ -12,7 +12,11 @@
 		"WorldRendererMixin",
 		"FogRendererMixin",
 		"SoundEngineMixin",
-		"SourceMixin"
+		"SourceMixin",
+		"EntityTurnMixin",
+		"CameraAccessor",
+		"ConcussionCameraMixin",
+		"ConcussionFovMixin"
 	],
 	"injectors": {
 		"defaultRequire": 1

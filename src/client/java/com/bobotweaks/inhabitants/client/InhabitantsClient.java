@@ -6,6 +6,7 @@ import com.bobotweaks.inhabitants.client.animation.FPVAnimationManager;
 import com.bobotweaks.inhabitants.init.ModParticleTypes;
 import com.bobotweaks.inhabitants.client.particle.AbracadabraParticle;
 import com.bobotweaks.inhabitants.client.effect.ImmaterialEffectHandler;
+import com.bobotweaks.inhabitants.client.effect.ConcussionEffectHandler;
 
 import net.fabricmc.api.ClientModInitializer;
 import net.fabricmc.fabric.api.client.networking.v1.ClientPlayNetworking;
@@ -29,5 +30,6 @@ public class InhabitantsClient implements ClientModInitializer {
 
 		// Effects
 		ImmaterialEffectHandler.register();
+		ConcussionEffectHandler.register();
 	}
 }

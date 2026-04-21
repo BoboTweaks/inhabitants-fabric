@@ -1,6 +1,7 @@
 package com.bobotweaks.inhabitants.client.mixin;
 
 import com.bobotweaks.inhabitants.client.render.ImmaterialFogModifier;
+import com.bobotweaks.inhabitants.client.render.ConcussionFogModifier;
 
 import net.minecraft.client.render.fog.FogModifier;
 import net.minecraft.client.render.fog.FogRenderer;
@@ -19,5 +20,6 @@ public abstract class FogRendererMixin {
     @Inject(method = "<clinit>", at = @At("TAIL"))
     private static void inhabitants$addImmaterialFog(CallbackInfo ci) {
         FOG_MODIFIERS.add(0, new ImmaterialFogModifier());
+        FOG_MODIFIERS.add(0, new ConcussionFogModifier());
     }
 }
