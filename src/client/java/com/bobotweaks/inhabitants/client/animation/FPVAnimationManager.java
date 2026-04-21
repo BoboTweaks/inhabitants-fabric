@@ -38,8 +38,7 @@ public class FPVAnimationManager implements SimpleSynchronousResourceReloadListe
             Identifier location = entry.getKey();
             Resource resource = entry.getValue();
 
-            try (BufferedReader reader = new
-                BufferedReader(new InputStreamReader(resource.getInputStream()))) {
+            try (BufferedReader reader = resource.getReader()) {
                 
                 JsonObject json = JsonParser.parseReader(reader).getAsJsonObject();
                 FPVAnimationDef def = parse(json);
