@@ -11,6 +11,7 @@ import net.minecraft.world.BlockRenderView;
 
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.injection.*;
+import org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable;
 
 @Mixin(BlockModelRenderer.class)
 public abstract class BlockModelRendererMixin {

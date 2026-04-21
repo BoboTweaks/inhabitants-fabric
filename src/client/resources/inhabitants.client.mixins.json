@@ -10,7 +10,9 @@
 		"BlockModelRendererMixin",
 		"PostEffectPassMixin",
 		"WorldRendererMixin",
-		"FogRendererMixin"
+		"FogRendererMixin",
+		"SoundEngineMixin",
+		"SourceMixin"
 	],
 	"injectors": {
 		"defaultRequire": 1

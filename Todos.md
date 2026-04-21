@@ -19,11 +19,12 @@
 - [ ] Javelin
 ### GUI
 - [ ] Spike Drill Overlay
+- [ ] Cauldron GUI
 
 ## Bugs & Fixes
 
 ### Spike Drill
-- [ ] temperature doesn't decrease when not using the drill
+- [ ] temperature doesn't decrease while using the drill
 - [ ] speed doesn't have smooth transition
 - [ ] fix: third-person drilling
 

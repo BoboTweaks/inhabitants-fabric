@@ -5,6 +5,7 @@ import com.bobotweaks.inhabitants.init.ModEffects;
 import com.bobotweaks.inhabitants.init.ModSoundEvents;
 import com.bobotweaks.inhabitants.client.audio.ModTickableSounds;
 import com.bobotweaks.inhabitants.client.mixin.GameRendererAccessor;
+import com.bobotweaks.inhabitants.client.audio.ModAudio;
 
 import net.fabricmc.fabric.api.client.event.lifecycle.v1.ClientTickEvents;
 
@@ -21,7 +22,7 @@ public class ImmaterialEffectHandler {
     private static ModTickableSounds.ImmaterialInsideLoop loopSound = null;
     private static final Identifier IMMATERIAL_SHADER_ID = Identifier.of(Inhabitants.MOD_ID, "immaterial");
 
-    public static float fogIntensity = 0.0f;
+    public static volatile float fogIntensity = 0.0f;
 
     public static void register() {
         ClientTickEvents.END_CLIENT_TICK.register(ImmaterialEffectHandler::onClientTick);
@@ -81,6 +82,8 @@ public class ImmaterialEffectHandler {
         } else {
             fogIntensity = Math.max(0.0f, fogIntensity - 0.1f);
         }
+        
+        ModAudio.updateFilter(fogIntensity);
         
         wasInsideBlock = isInside;
     }
