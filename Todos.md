@@ -2,8 +2,12 @@
 
 ## Porting
 ### Items
+- [x] Food items
 - [x] Spike drill
 - [ ] Javelin
+### Blocks
+- [ ] Cauldron
+- [ ] Impaler head
 ### Effects
 - [x] Reverse Growth
 - [x] Immaterial
@@ -29,6 +33,8 @@
 - [ ] fix: third-person drilling
 
 ## QA
+### Entities
+- [ ] ensure Impaler changes texture when spawned in Dripstone Caves
 
 ### Multiplayer tests
 - [ ] test spike drill in multiplayer
