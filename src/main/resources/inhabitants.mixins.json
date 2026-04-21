@@ -6,7 +6,8 @@
 		"ReverseGrowthMixin",
 		"StickyLegsMixin",
 		"ImmaterialMixin",
-		"LivingEntityMixin"
+		"LivingEntityMixin",
+		"ActiveTargetGoalMixin"
 	],
 	"injectors": {
 		"defaultRequire": 1

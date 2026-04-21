@@ -5,6 +5,7 @@
 - [x] Food items
 - [x] Spike drill
 - [ ] Javelin
+- [ ] Crossbow (spike)
 ### Blocks
 - [ ] Cauldron
 - [ ] Impaler head

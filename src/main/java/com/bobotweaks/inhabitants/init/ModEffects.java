@@ -30,6 +30,9 @@ public class ModEffects {
     public static final RegistryEntry<StatusEffect> CONCUSSION = register("concussion", 
         new ConcussionStatusEffect(StatusEffectCategory.HARMFUL, 0x808080));
 
+    public static final RegistryEntry<StatusEffect> UNDEAD_DISGUISE = register("undead_disguise", 
+        new UndeadDisguiseStatusEffect(StatusEffectCategory.BENEFICIAL, 0x874712));
+
     private static RegistryEntry<StatusEffect> register(String name, StatusEffect statusEffect) {
         return Registry.registerReference(Registries.STATUS_EFFECT,
             Identifier.of(Inhabitants.MOD_ID, name), statusEffect);
